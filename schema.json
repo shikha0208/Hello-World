@@ -1,0 +1,161 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "Thesis",
+        "ShikhaTest"
+    ],
+    "properties": {
+        "Thesis": {
+            "$id": "#/properties/Thesis",
+            "type": "object",
+            "title": "The Thesis Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "git": [
+                        "https://github.com/shikha0208/metrics",
+                        "https://github.com/shikha0208/Hello-World"
+                    ],
+                    "github": [
+                        "https://github.com/shikha0208/metrics",
+                        "https://github.com/shikha0208/Hello-World.git"
+                    ]
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "git",
+                "github"
+            ],
+            "properties": {
+                "git": {
+                    "$id": "#/properties/Thesis/properties/git",
+                    "type": "array",
+                    "title": "The Git Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            "https://github.com/shikha0208/metrics",
+                            "https://github.com/shikha0208/Hello-World"
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Thesis/properties/git/items",
+                        "type": "string",
+                        "title": "The Items Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "https://github.com/shikha0208/metrics",
+                            "https://github.com/shikha0208/Hello-World"
+                        ]
+                    }
+                },
+                "github": {
+                    "$id": "#/properties/Thesis/properties/github",
+                    "type": "array",
+                    "title": "The Github Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            "https://github.com/shikha0208/metrics",
+                            "https://github.com/shikha0208/Hello-World.git"
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Thesis/properties/github/items",
+                        "type": "string",
+                        "title": "The Items Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "https://github.com/shikha0208/metrics",
+                            "https://github.com/shikha0208/Hello-World.git"
+                        ]
+                    }
+                }
+            }
+        },
+        "ShikhaTest": {
+            "$id": "#/properties/ShikhaTest",
+            "type": "object",
+            "title": "The Shikhatest Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "github": [
+                        "https://github.com/shikha0208/grimoirelab-elk"
+                    ],
+                    "git": [
+                        "https://github.com/shikha0208/grimoirelab-elk"
+                    ]
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "git",
+                "github"
+            ],
+            "properties": {
+                "git": {
+                    "$id": "#/properties/ShikhaTest/properties/git",
+                    "type": "array",
+                    "title": "The Git Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            "https://github.com/shikha0208/grimoirelab-elk"
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/ShikhaTest/properties/git/items",
+                        "type": "string",
+                        "title": "The Items Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "https://github.com/shikha0208/grimoirelab-elk"
+                        ]
+                    }
+                },
+                "github": {
+                    "$id": "#/properties/ShikhaTest/properties/github",
+                    "type": "array",
+                    "title": "The Github Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            "https://github.com/shikha0208/grimoirelab-elk"
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/ShikhaTest/properties/github/items",
+                        "type": "string",
+                        "title": "The Items Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "https://github.com/shikha0208/grimoirelab-elk"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
